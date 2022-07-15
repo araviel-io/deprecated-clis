@@ -23,14 +23,14 @@ import {
   A,
   CANDY_MACHINE_PROGRAM_V2_ID,
 } from './constants';
-import * as anchor from '@araviel/anchor';
+import * as anchor from '@j0nnyboi/anchor';
 import fs from 'fs';
 import { createCandyMachineV2Account } from './instructions';
-import { web3 } from '@araviel/anchor';
+import { web3 } from '@j0nnyboi/anchor';
 import log from 'loglevel';
 import { AccountLayout, u64 } from '@safecoin/safe-token';
 import { getCluster } from './various';
-import { bs58 } from '@araviel/anchor/dist/cjs/utils/bytes';
+import { bs58 } from '@j0nnyboi/anchor/dist/cjs/utils/bytes';
 export type AccountAndPubkey = {
   pubkey: string;
   account: AccountInfo<Buffer>;

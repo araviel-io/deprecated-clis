@@ -7,7 +7,7 @@ import {
 } from '@safecoin/web3.js';
 import fs from 'fs';
 import log from 'loglevel';
-import { BN, Program, web3 } from '@araviel/anchor';
+import { BN, Program, web3 } from '@j0nnyboi/anchor';
 import { Token, TOKEN_PROGRAM_ID } from '@safecoin/safe-token';
 import { StorageType } from './storage-type';
 

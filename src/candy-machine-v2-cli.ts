@@ -2,7 +2,7 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import { InvalidArgumentError, program } from 'commander';
-import * as anchor from '@araviel/anchor';
+import * as anchor from '@j0nnyboi/anchor';
 
 import {
   chunks,
@@ -48,7 +48,7 @@ import { removeCollection } from './commands/remove-collection';
 import { setCollection } from './commands/set-collection';
 import { withdrawBundlr } from './helpers/upload/arweave-bundle';
 import { CollectionData } from './types';
-import { bs58 } from '@araviel/anchor/dist/cjs/utils/bytes';
+import { bs58 } from '@j0nnyboi/anchor/dist/cjs/utils/bytes';
 
 program.version('0.0.2');
 const supportedImageTypes = {

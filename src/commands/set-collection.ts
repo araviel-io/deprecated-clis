@@ -6,7 +6,7 @@ import {
   getMetadata,
 } from '../helpers/accounts';
 import { TOKEN_METADATA_PROGRAM_ID } from '../helpers/constants';
-import * as anchor from '@araviel/anchor';
+import * as anchor from '@j0nnyboi/anchor';
 import {
   ASSOCIATED_TOKEN_PROGRAM_ID,
   TOKEN_PROGRAM_ID,
@@ -21,7 +21,7 @@ import {
   DataV2,
 } from '@j0nnyboi/mpl-token-metadata';
 import log from 'loglevel';
-import { Program } from '@araviel/anchor';
+import { Program } from '@j0nnyboi/anchor';
 import { parseCollectionMintPubkey } from '../helpers/various';
 
 export async function setCollection(

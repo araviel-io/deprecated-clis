@@ -4,7 +4,7 @@ import {
   getMetadata,
   getMasterEdition,
 } from '../helpers/accounts';
-import * as anchor from '@araviel/anchor';
+import * as anchor from '@j0nnyboi/anchor';
 import fetch from 'node-fetch';
 import {
   ASSOCIATED_TOKEN_PROGRAM_ID,

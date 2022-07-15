@@ -12,7 +12,7 @@ import {
 } from './commands/mint-nft';
 import { getMetadata, loadWalletKey } from './helpers/accounts';
 import { parseUses } from './helpers/various';
-import { web3 } from '@araviel/anchor';
+import { web3 } from '@j0nnyboi/anchor';
 import { PublicKey } from '@safecoin/web3.js';
 import { getCluster } from './helpers/various';
 import { DataV2, MetadataData } from '@j0nnyboi/mpl-token-metadata';
