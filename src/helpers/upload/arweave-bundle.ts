@@ -501,16 +501,16 @@ export async function* makeArweaveBundleUploadGenerator(
             walletKeyPair.secretKey,
             {
               timeout: 60000,
-              providerUrl: rpcUrl ?? 'https://api.metaplex.solana.com',
+              providerUrl: rpcUrl ?? 'https://arweave.net/',
             },
           )
         : new Bundlr(
-            'https://devnet.bundlr.network',
+            'http://safestore.testnet.darkartlabs.tech:1984/',
             'solana',
             walletKeyPair.secretKey,
             {
               timeout: 60000,
-              providerUrl: 'https://metaplex.devnet.rpcpool.com',
+              providerUrl: 'https://api.devnet.safecoin.org',
             },
           )
       : undefined;

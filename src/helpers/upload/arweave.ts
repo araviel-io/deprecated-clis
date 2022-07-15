@@ -1,4 +1,4 @@
-import * as anchor from '@araviel/anchor';
+import * as anchor from '@j0nnyboi/anchor';
 import FormData from 'form-data';
 import fs from 'fs';
 import path from 'path';
@@ -10,7 +10,7 @@ import { ARWEAVE_PAYMENT_WALLET } from '../constants';
 import { sendTransactionWithRetryWithKeypair } from '../transactions';
 
 const ARWEAVE_UPLOAD_ENDPOINT =
-  'https://us-central1-metaplex-studios.cloudfunctions.net/uploadFile';
+  'http://safestore.testnet.darkartlabs.tech:1984/';
 
 async function fetchAssetCostToStore(fileSizes: number[]) {
   const result = await calculate(fileSizes);
@@ -111,7 +111,7 @@ export async function arweaveUpload(
     m => m.filename === `${index}${imageExt}`,
   );
   if (metadataFile?.transactionId) {
-    const link = `https://arweave.net/${metadataFile.transactionId}`;
+    const link = `http://safestore.testnet.darkartlabs.tech:1984/${metadataFile.transactionId}`;
     const imageLink = `https://arweave.net/${
       imageFile.transactionId
     }?ext=${imageExt.replace('.', '')}`;
