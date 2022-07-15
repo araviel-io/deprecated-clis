@@ -2,7 +2,7 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import { InvalidArgumentError, program } from 'commander';
-import * as anchor from '@project-serum/anchor';
+import * as anchor from '@araviel/anchor';
 
 import {
   chunks,
@@ -11,7 +11,7 @@ import {
   parseCollectionMintPubkey,
   parsePrice,
 } from './helpers/various';
-import { PublicKey, LAMPORTS_PER_SOL } from '@solana/web3.js';
+import { PublicKey, LAMPORTS_PER_SAFE } from '@safecoin/web3.js';
 import {
   CACHE_PATH,
   CLUSTERS,
@@ -48,7 +48,7 @@ import { removeCollection } from './commands/remove-collection';
 import { setCollection } from './commands/set-collection';
 import { withdrawBundlr } from './helpers/upload/arweave-bundle';
 import { CollectionData } from './types';
-import { bs58 } from '@project-serum/anchor/dist/cjs/utils/bytes';
+import { bs58 } from '@araviel/anchor/dist/cjs/utils/bytes';
 
 program.version('0.0.2');
 const supportedImageTypes = {
@@ -360,7 +360,7 @@ programCommand('withdraw')
       return;
     }
 
-    const refundAmount = candyMachineAccount.lamports / LAMPORTS_PER_SOL;
+    const refundAmount = candyMachineAccount.lamports / LAMPORTS_PER_SAFE;
     const cpf = parseFloat(charityPercent);
     let charityPub;
     log.info(`Amount to be drained from ${candyMachineId}: ${refundAmount}`);
@@ -442,7 +442,7 @@ programCommand('withdraw_all')
     for (const cg in machines) {
       t += machines[cg].account.lamports;
     }
-    const totalValue = t / LAMPORTS_PER_SOL;
+    const totalValue = t / LAMPORTS_PER_SAFE;
     const cpf = parseFloat(charityPercent);
     let charityPub;
     log.info(

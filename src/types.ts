@@ -1,5 +1,5 @@
-import { BN } from '@project-serum/anchor';
-import { PublicKey } from '@solana/web3.js';
+import { BN } from '@araviel/anchor';
+import { PublicKey } from '@safecoin/web3.js';
 
 export class Creator {
   address: PublicKey;

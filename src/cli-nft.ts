@@ -12,10 +12,10 @@ import {
 } from './commands/mint-nft';
 import { getMetadata, loadWalletKey } from './helpers/accounts';
 import { parseUses } from './helpers/various';
-import { web3 } from '@project-serum/anchor';
-import { PublicKey } from '@solana/web3.js';
+import { web3 } from '@araviel/anchor';
+import { PublicKey } from '@safecoin/web3.js';
 import { getCluster } from './helpers/various';
-import { DataV2, MetadataData } from '@metaplex-foundation/mpl-token-metadata';
+import { DataV2, MetadataData } from '@j0nnyboi/mpl-token-metadata';
 import * as fs from 'fs';
 
 program.version('1.1.0');

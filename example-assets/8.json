@@ -1,19 +1,54 @@
 {
-  "name": "9",
-  "symbol": "",
+  "name": "AravCollection #8",
+  "symbol": "ARAS",
+  "description": "AravCollection description",
+  "seller_fee_basis_points": 1000,
   "image": "8.png",
-  "properties": {
-    "files": [{ "uri": "8.png", "type": "image/png" }],
-    "category": "image",
-    "creators": []
-  },
-  "description": "",
-  "seller_fee_basis_points": 500,
+  "external_url": "https://www.youtube.com/c/hashlipsnft",
+  "edition": 8,
   "attributes": [
-    { "trait_type": "background", "value": "light-yellow" },
-    { "trait_type": "eyes", "value": "star-eyes" },
-    { "trait_type": "mouth", "value": "triangle-mouth" },
-    { "trait_type": "face", "value": "grapefruit-face" }
+    {
+      "trait_type": "Background",
+      "value": "Black"
+    },
+    {
+      "trait_type": "Eyeball",
+      "value": "White"
+    },
+    {
+      "trait_type": "Eye color",
+      "value": "Yellow"
+    },
+    {
+      "trait_type": "Iris",
+      "value": "Small"
+    },
+    {
+      "trait_type": "Shine",
+      "value": "Shapes"
+    },
+    {
+      "trait_type": "Bottom lid",
+      "value": "Low"
+    },
+    {
+      "trait_type": "Top lid",
+      "value": "Middle"
+    }
   ],
-  "collection": {}
+  "properties": {
+    "files": [
+      {
+        "uri": "8.png",
+        "type": "image/png"
+      }
+    ],
+    "category": "image",
+    "creators": [
+      {
+        "address": "EtK9YcDo8esvVNdHLCFGeWJsJEgz6jscRhtZkkcYS8vp",
+        "share": 100
+      }
+    ]
+  }
 }

@@ -9,6 +9,26 @@
   dependencies:
     "@jridgewell/trace-mapping" "^0.3.0"
 
+"@araviel/anchor@^0.17.0":
+  version "0.17.0"
+  resolved "https://registry.yarnpkg.com/@araviel/anchor/-/anchor-0.17.0.tgz#707c15beb60129cb1d5a32407ec3b6d5eaecda4a"
+  integrity sha512-WO0b0HESuuVx/MwQxcnL++ISmWWGDQnXJpmKuX9WBkqydfRAeBuOJYSJw9bT97czLBnVPum0ssTh4wAMJy/3+Q==
+  dependencies:
+    "@j0nnyboi/borsh" "^0.1.0"
+    "@safecoin/web3.js" "^1.29.4"
+    base64-js "^1.5.1"
+    bn.js "^5.1.2"
+    bs58 "^4.0.1"
+    buffer-layout "^1.2.0"
+    camelcase "^5.3.1"
+    crypto-hash "^1.3.0"
+    eventemitter3 "^4.0.7"
+    find "^0.3.0"
+    js-sha256 "^0.9.0"
+    pako "^2.0.3"
+    snake-case "^3.0.4"
+    toml "^3.0.0"
+
 "@assemblyscript/loader@^0.9.4":
   version "0.9.4"
   resolved "https://registry.yarnpkg.com/@assemblyscript/loader/-/loader-0.9.4.tgz#a483c54c1253656bb33babd464e3154a173e1577"
@@ -2293,6 +2313,40 @@
   resolved "https://registry.yarnpkg.com/@istanbuljs/schema/-/schema-0.1.3.tgz#e45e384e4b8ec16bce2fd903af78450f6bf7ec98"
   integrity sha512-ZXRY4jNvVgSVQ8DL3LTcakaAtXwTVUxE81hslsyD2AtoXW/wVob10HkOJ1X/pAlcI7D+2YoZKg5do8G/w6RYgA==
 
+"@j0nnyboi/arweave-cost@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@j0nnyboi/arweave-cost/-/arweave-cost-2.0.1.tgz#e9d45409496e4cdac3c3d54d2273072dd320ecc9"
+  integrity sha512-UrT9iGU4+ZpvhIIylQ7y+GzhpVmHuInHrSOhA9oAeN2lctNzezm18MnwPbsWwKaWFgPyCqk9tZ4dk+Z92QAfuw==
+  dependencies:
+    axios "^0.24.0"
+    debug "^4.3.2"
+
+"@j0nnyboi/borsh@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@j0nnyboi/borsh/-/borsh-0.1.0.tgz#667dabcf4208d27d1a1f8d8a6147e2e67832d2cd"
+  integrity sha512-llaJkgqip/NEZoYiS74ml1y7uCSRuCJKJ4743tfNlD0gG+PCCYYfeUv8+lOzqn3E/k+YvVVzksv8aoItiPcSVw==
+  dependencies:
+    bn.js "^5.2"
+    buffer-layout "^1.2.0"
+    run-s "^0.0.0"
+
+"@j0nnyboi/mpl-core@0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@j0nnyboi/mpl-core/-/mpl-core-0.0.1.tgz#03362f18038b22b56dd265a4ed873c4b5ef5ce02"
+  integrity sha512-Q5KYRaXs9kcl7o3AglkXoLX4HjN69zMg9Eeu0VrH57tb10d7jzr6lKqh/6M47/4P2Nzy0l+aaqAi0rGsnW9GBQ==
+  dependencies:
+    "@safecoin/web3.js" "^1.29.3"
+    bs58 "^4.0.1"
+
+"@j0nnyboi/mpl-token-metadata@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@j0nnyboi/mpl-token-metadata/-/mpl-token-metadata-0.0.1.tgz#29b8dc5b15a42c1dd097c33c7ee096b906194e73"
+  integrity sha512-52c7jY8DgJrzhDDuEP6rYfWn2SmcPHC5W7q+e7lzITMX3ekKYz5WwvjBun2OpjLO2lXoxweBhreYbsYFJ9NtLw==
+  dependencies:
+    "@j0nnyboi/mpl-core" "0.0.1"
+    "@safecoin/safe-token" "^0.1.7-b"
+    "@safecoin/web3.js" "^1.29.3"
+
 "@jest/console@^27.5.1":
   version "27.5.1"
   resolved "https://registry.yarnpkg.com/@jest/console/-/console-27.5.1.tgz#260fe7239602fe5130a94f1aa386eff54b014bba"
@@ -2480,31 +2534,6 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
-"@metaplex-foundation/mpl-core@^0.0.2":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@metaplex-foundation/mpl-core/-/mpl-core-0.0.2.tgz#17ee2cc216e17629d6df1dbba75964625ebbd603"
-  integrity sha512-UUJ4BlYiWdDegAWmjsNQiNehwYU3QfSFWs3sv4VX0J6/ZrQ28zqosGhQ+I2ZCTEy216finJ82sZWNjuwSWCYyQ==
-  dependencies:
-    "@solana/web3.js" "^1.31.0"
-    bs58 "^4.0.1"
-
-"@metaplex-foundation/mpl-token-metadata@1.2.5":
-  version "1.2.5"
-  resolved "https://registry.yarnpkg.com/@metaplex-foundation/mpl-token-metadata/-/mpl-token-metadata-1.2.5.tgz#1a927b1c7d30cd634a1e4782022712a02f6865c2"
-  integrity sha512-pxRG53JsTSwXpiJJMHNulJhH8kO3hHztQ3QxslUoKw2hBYKXsg9TGsiHgNIhN2MPZGBJ2pDeK6kNGv0sd54HhA==
-  dependencies:
-    "@metaplex-foundation/mpl-core" "^0.0.2"
-    "@solana/spl-token" "^0.1.8"
-    "@solana/web3.js" "^1.31.0"
-
-"@metaplex/arweave-cost@^1.0.4":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@metaplex/arweave-cost/-/arweave-cost-1.0.4.tgz#35d5d10dfc855463fc7fe18594e175506a4a35d4"
-  integrity sha512-bJ7knj9bacarfoIgkomDUOIRURYBAIYUg1oJZh1MfAl9w28x1gfMkt2e7H5zK0HDKkS2lmJQ5dpcsR+FGP9zMA==
-  dependencies:
-    axios "^0.24.0"
-    debug "^4.3.2"
-
 "@multiformats/murmur3@^1.0.3":
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/@multiformats/murmur3/-/murmur3-1.1.1.tgz#52a8ae168f495664af774df896be3708cbe7731e"
@@ -2555,34 +2584,6 @@
   dependencies:
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
-
-"@project-serum/anchor@^0.17.0":
-  version "0.17.0"
-  resolved "https://registry.yarnpkg.com/@project-serum/anchor/-/anchor-0.17.0.tgz#99a2cc59cae2939c1db1197950b7b606319ea7a8"
-  integrity sha512-vctZHZD5rUP1WXUUaJFdKl+1u0dE+O2+jejmYcb0InAZiwXdGAW8mX47U902voT94PdCr0aNHuyOQ8I75nfinw==
-  dependencies:
-    "@project-serum/borsh" "^0.2.2"
-    "@solana/web3.js" "^1.17.0"
-    base64-js "^1.5.1"
-    bn.js "^5.1.2"
-    bs58 "^4.0.1"
-    buffer-layout "^1.2.0"
-    camelcase "^5.3.1"
-    crypto-hash "^1.3.0"
-    eventemitter3 "^4.0.7"
-    find "^0.3.0"
-    js-sha256 "^0.9.0"
-    pako "^2.0.3"
-    snake-case "^3.0.4"
-    toml "^3.0.0"
-
-"@project-serum/borsh@^0.2.2":
-  version "0.2.5"
-  resolved "https://registry.yarnpkg.com/@project-serum/borsh/-/borsh-0.2.5.tgz#6059287aa624ecebbfc0edd35e4c28ff987d8663"
-  integrity sha512-UmeUkUoKdQ7rhx6Leve1SssMR/Ghv8qrEiyywyxSWg7ooV7StdpPBhciiy5eB3T0qU1BXvdRNC8TdrkxK7WC5Q==
-  dependencies:
-    bn.js "^5.1.2"
-    buffer-layout "^1.2.0"
 
 "@protobufjs/aspromise@^1.1.1", "@protobufjs/aspromise@^1.1.2":
   version "1.1.2"
@@ -2649,6 +2650,38 @@
   dependencies:
     "@randlabs/communication-bridge" "^1.0.0"
 
+"@safecoin/safe-token@^0.1.7-b":
+  version "0.1.7-b"
+  resolved "https://registry.yarnpkg.com/@safecoin/safe-token/-/safe-token-0.1.7-b.tgz#6cbac5036eb31581c1a1b551f16663fdd898c050"
+  integrity sha512-xIfz5U4rtzjxAdWTjvEcz3YVTCJfVnoBZGHQXw1lUgUMZrhmLJtI17Qu//sGM/Vf3iLkmr46CKGSzcrrKGjT8w==
+  dependencies:
+    "@babel/runtime" "^7.10.5"
+    "@safecoin/web3.js" "^1.21.0"
+    bn.js "^5.1.0"
+    buffer "6.0.3"
+    buffer-layout "^1.2.0"
+    dotenv "10.0.0"
+
+"@safecoin/web3.js@^1.21.0", "@safecoin/web3.js@^1.29.3", "@safecoin/web3.js@^1.29.4":
+  version "1.29.4"
+  resolved "https://registry.yarnpkg.com/@safecoin/web3.js/-/web3.js-1.29.4.tgz#7593735166e5b3eca81fb10d0db38df280b8e003"
+  integrity sha512-IPU1EL30feLyDw6qDMjKXP9r70KPQI52n1Sh9R9QXD4EjBRQs0DJm7dVqSGjJiMrqvM4p8I6rGMwljtSPdr5vA==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "@solana/buffer-layout" "^3.0.0"
+    bn.js "^5.0.0"
+    borsh "^0.4.0"
+    bs58 "^4.0.1"
+    buffer "6.0.1"
+    cross-fetch "^3.1.4"
+    crypto-hash "^1.2.2"
+    jayson "^3.4.4"
+    js-sha3 "^0.8.0"
+    rpc-websockets "^7.4.2"
+    secp256k1 "^4.0.2"
+    superstruct "^0.14.2"
+    tweetnacl "^1.0.0"
+
 "@sinonjs/commons@^1.7.0":
   version "1.8.3"
   resolved "https://registry.yarnpkg.com/@sinonjs/commons/-/commons-1.8.3.tgz#3802ddd21a50a949b6721ddd72da36e67e7f1b2d"
@@ -2670,18 +2703,6 @@
   dependencies:
     buffer "~6.0.3"
 
-"@solana/spl-token@^0.1.8":
-  version "0.1.8"
-  resolved "https://registry.yarnpkg.com/@solana/spl-token/-/spl-token-0.1.8.tgz#f06e746341ef8d04165e21fc7f555492a2a0faa6"
-  integrity sha512-LZmYCKcPQDtJgecvWOgT/cnoIQPWjdH+QVyzPcFvyDUiT0DiRjZaam4aqNUyvchLFhzgunv3d9xOoyE34ofdoQ==
-  dependencies:
-    "@babel/runtime" "^7.10.5"
-    "@solana/web3.js" "^1.21.0"
-    bn.js "^5.1.0"
-    buffer "6.0.3"
-    buffer-layout "^1.2.0"
-    dotenv "10.0.0"
-
 "@solana/wallet-adapter-base@^0.9.2":
   version "0.9.4"
   resolved "https://registry.yarnpkg.com/@solana/wallet-adapter-base/-/wallet-adapter-base-0.9.4.tgz#4a3341d3808f46c290e3fd580ce43f1181a702fc"
@@ -2690,27 +2711,7 @@
     "@solana/web3.js" "^1.20.0"
     eventemitter3 "^4.0.0"
 
-"@solana/web3.js@1.33.0":
-  version "1.33.0"
-  resolved "https://registry.yarnpkg.com/@solana/web3.js/-/web3.js-1.33.0.tgz#3b8c0b4cd259ffe8764937f1001f79958c5d9533"
-  integrity sha512-R53wvQQsUKCCJ9UmOfDlxCwC94jzjmpjr6wT/Xf1uFavZblSLAtzLaF4vbGIS465lk3mW6oJMtASd8cqSnr8Mw==
-  dependencies:
-    "@babel/runtime" "^7.12.5"
-    "@ethersproject/sha2" "^5.5.0"
-    "@solana/buffer-layout" "^3.0.0"
-    bn.js "^5.0.0"
-    borsh "^0.4.0"
-    bs58 "^4.0.1"
-    buffer "6.0.1"
-    cross-fetch "^3.1.4"
-    jayson "^3.4.4"
-    js-sha3 "^0.8.0"
-    rpc-websockets "^7.4.2"
-    secp256k1 "^4.0.2"
-    superstruct "^0.14.2"
-    tweetnacl "^1.0.0"
-
-"@solana/web3.js@^1.17.0", "@solana/web3.js@^1.20.0", "@solana/web3.js@^1.21.0", "@solana/web3.js@^1.30.2", "@solana/web3.js@^1.31.0", "@solana/web3.js@^1.36.0":
+"@solana/web3.js@^1.20.0", "@solana/web3.js@^1.30.2", "@solana/web3.js@^1.36.0":
   version "1.36.0"
   resolved "https://registry.yarnpkg.com/@solana/web3.js/-/web3.js-1.36.0.tgz#79d7d5217b49b80139f4de68953adc5b9a9a264f"
   integrity sha512-RNT1451iRR7TyW7EJKMCrH/0OXawIe4zVm0DWQASwXlR/u1jmW6FrmH0lujIh7cGTlfOVbH+2ZU9AVUPLBFzwA==
@@ -3663,6 +3664,11 @@ bn.js@^4.0.0, bn.js@^4.11.9:
   resolved "https://registry.yarnpkg.com/bn.js/-/bn.js-4.12.0.tgz#775b3f278efbb9718eec7361f483fb36fbbfea88"
   integrity sha512-c98Bf3tPniI+scsdk237ku1Dc3ujXQTSgyiPUDEOe7tRkhrqridvh8klBv0HCEso1OLOYcHuCv/cS6DNxKH+ZA==
 
+bn.js@^5.2:
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/bn.js/-/bn.js-5.2.1.tgz#0bc527a6a0d18d0aa8d5b0538ce4a77dccfa7b70"
+  integrity sha512-eXRvHzWyYPBuB4NBy0cmYQjGitUrtqwbvlzP3G6VFnNRbsZQIxQ10PbKKHt8gZ/HW/D/747aDl+QkDqg3KQLMQ==
+
 borsh@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/borsh/-/borsh-0.4.0.tgz#9dd6defe741627f1315eac2a73df61421f6ddb9f"
@@ -4059,7 +4065,7 @@ cross-spawn@^7.0.2, cross-spawn@^7.0.3:
     shebang-command "^2.0.0"
     which "^2.0.1"
 
-crypto-hash@^1.3.0:
+crypto-hash@^1.2.2, crypto-hash@^1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/crypto-hash/-/crypto-hash-1.3.0.tgz#b402cb08f4529e9f4f09346c3e275942f845e247"
   integrity sha512-lyAZ0EMyjDkVvz8WOeVnuCPvKVBXcMv1l5SVqO1yC7PzTwrD/pPje/BIRbWhMoPe436U+Y2nD7f5bFx0kt+Sbg==
@@ -7487,6 +7493,11 @@ run-parallel@^1.1.9:
   integrity sha512-5l4VyZR86LZ/lDxZTR6jqL8AFE2S0IFLMP26AbjsLVADxHdhB/c0GUsH+y39UfCi3dzz8OlQuPmnaJOMoDHQBA==
   dependencies:
     queue-microtask "^1.2.2"
+
+run-s@^0.0.0:
+  version "0.0.0"
+  resolved "https://registry.yarnpkg.com/run-s/-/run-s-0.0.0.tgz#599912be20c00ba7698655c9936d075d31b71754"
+  integrity sha512-KPDNauF2Tpnm3nG0+0LJuJxwBFrhAdthpM8bVdDvjWQA7pWP7QoNwEl1+dJ7WVJj81AQP/i6kl6JUmAk7tg3Og==
 
 rxjs@^7.2.0:
   version "7.5.4"

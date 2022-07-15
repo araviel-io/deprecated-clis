@@ -1,4 +1,4 @@
-import { PublicKey, clusterApiUrl } from '@solana/web3.js';
+import { PublicKey, clusterApiUrl } from '@safecoin/web3.js';
 export const CANDY_MACHINE = 'candy_machine';
 export const AUCTION_HOUSE = 'auction_house';
 export const TOKEN_ENTANGLER = 'token_entangler';
@@ -129,7 +129,7 @@ export const CLUSTERS: Cluster[] = [
   },
   {
     name: 'devnet',
-    url: clusterApiUrl('devnet'),
+    url: 'https://api.devnet.safecoin.org',
   },
 ];
 export const DEFAULT_CLUSTER = CLUSTERS[2];

@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 import * as fs from 'fs';
 import { program } from 'commander';
-import * as anchor from '@project-serum/anchor';
-import { LAMPORTS_PER_SOL } from '@solana/web3.js';
-import { Token, MintLayout } from '@solana/spl-token';
+import * as anchor from '@araviel/anchor';
+import { LAMPORTS_PER_SAFE } from '@safecoin/web3.js';
+import { Token, MintLayout } from '@safecoin/safe-token';
 import {
   CACHE_PATH,
   FAIR_LAUNCH_PROGRAM_ID,
@@ -151,11 +151,11 @@ program
     const anchorProgram = await loadFairLaunchProgram(walletKeyPair, env);
     if (!treasuryMint) {
       priceRangeStartNumber = Math.ceil(
-        priceRangeStartNumber * LAMPORTS_PER_SOL,
+        priceRangeStartNumber * LAMPORTS_PER_SAFE,
       );
-      priceRangeEndNumber = Math.ceil(priceRangeEndNumber * LAMPORTS_PER_SOL);
-      tickSizeNumber = Math.ceil(tickSizeNumber * LAMPORTS_PER_SOL);
-      feeNumber = Math.ceil(feeNumber * LAMPORTS_PER_SOL);
+      priceRangeEndNumber = Math.ceil(priceRangeEndNumber * LAMPORTS_PER_SAFE);
+      tickSizeNumber = Math.ceil(tickSizeNumber * LAMPORTS_PER_SAFE);
+      feeNumber = Math.ceil(feeNumber * LAMPORTS_PER_SAFE);
     } else {
       const token = new Token(
         anchorProgram.provider.connection,
@@ -333,11 +333,11 @@ program
     const anchorProgram = await loadFairLaunchProgram(walletKeyPair, env);
     if (!mint) {
       priceRangeStartNumber = Math.ceil(
-        priceRangeStartNumber * LAMPORTS_PER_SOL,
+        priceRangeStartNumber * LAMPORTS_PER_SAFE,
       );
-      priceRangeEndNumber = Math.ceil(priceRangeEndNumber * LAMPORTS_PER_SOL);
-      tickSizeNumber = Math.ceil(tickSizeNumber * LAMPORTS_PER_SOL);
-      feeNumber = Math.ceil(feeNumber * LAMPORTS_PER_SOL);
+      priceRangeEndNumber = Math.ceil(priceRangeEndNumber * LAMPORTS_PER_SAFE);
+      tickSizeNumber = Math.ceil(tickSizeNumber * LAMPORTS_PER_SAFE);
+      feeNumber = Math.ceil(feeNumber * LAMPORTS_PER_SAFE);
     } else {
       const token = new Token(
         anchorProgram.provider.connection,
@@ -434,7 +434,7 @@ program
 
     //@ts-ignore
     if (!fairLaunchObj.treasuryMint) {
-      amountNumber = Math.ceil(amountNumber * LAMPORTS_PER_SOL);
+      amountNumber = Math.ceil(amountNumber * LAMPORTS_PER_SAFE);
     } else {
       const transferAuthority = anchor.web3.Keypair.generate();
       signers.push(transferAuthority);
@@ -734,7 +734,7 @@ async function adjustTicket({
   //@ts-ignore
   if (!fairLaunchObj.treasuryMint) {
     if (adjustMantissa)
-      amountNumber = Math.ceil(amountNumber * LAMPORTS_PER_SOL);
+      amountNumber = Math.ceil(amountNumber * LAMPORTS_PER_SAFE);
   } else {
     const transferAuthority = anchor.web3.Keypair.generate();
     signers.push(transferAuthority);

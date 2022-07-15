@@ -1,4 +1,4 @@
-import { Keypair, PublicKey, SystemProgram } from '@solana/web3.js';
+import { Keypair, PublicKey, SystemProgram } from '@safecoin/web3.js';
 import {
   CandyMachine,
   getAtaForMint,
@@ -17,11 +17,15 @@ import {
   TOKEN_METADATA_PROGRAM_ID,
   TOKEN_PROGRAM_ID,
 } from '../helpers/constants';
-import * as anchor from '@project-serum/anchor';
-import { MintLayout, Token } from '@solana/spl-token';
+import * as anchor from '@araviel/anchor';
+import { MintLayout, Token } from '@safecoin/safe-token';
 import { createAssociatedTokenAccountInstruction } from '../helpers/instructions';
 import { sendTransactionWithRetryWithKeypair } from '../helpers/transactions';
 import log from 'loglevel';
+
+const SYSVAR_SLOT_HASHES_PUBKEY = new PublicKey(
+  'SysvarS1otHashes111111111111111111111111111',
+);
 
 export async function mint(
   keypair: string,
@@ -338,7 +342,7 @@ export async function mintV2(
         systemProgram: SystemProgram.programId,
         rent: anchor.web3.SYSVAR_RENT_PUBKEY,
         clock: anchor.web3.SYSVAR_CLOCK_PUBKEY,
-        recentBlockhashes: anchor.web3.SYSVAR_SLOT_HASHES_PUBKEY,
+        recentBlockhashes: SYSVAR_SLOT_HASHES_PUBKEY,
         instructionSysvarAccount: anchor.web3.SYSVAR_INSTRUCTIONS_PUBKEY,
       },
       remainingAccounts:

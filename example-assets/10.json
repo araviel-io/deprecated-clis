@@ -1,11 +1,11 @@
 {
-  "name": "AravCollection #3",
+  "name": "AravCollection #10",
   "symbol": "ARAS",
   "description": "AravCollection description",
   "seller_fee_basis_points": 1000,
-  "image": "3.png",
+  "image": "10.png",
   "external_url": "https://www.youtube.com/c/hashlipsnft",
-  "edition": 3,
+  "edition": 10,
   "attributes": [
     {
       "trait_type": "Background",
@@ -13,11 +13,11 @@
     },
     {
       "trait_type": "Eyeball",
-      "value": "White"
+      "value": "Red"
     },
     {
       "trait_type": "Eye color",
-      "value": "Purple"
+      "value": "Yellow"
     },
     {
       "trait_type": "Iris",
@@ -29,7 +29,7 @@
     },
     {
       "trait_type": "Bottom lid",
-      "value": "Middle"
+      "value": "Low"
     },
     {
       "trait_type": "Top lid",
@@ -39,7 +39,7 @@
   "properties": {
     "files": [
       {
-        "uri": "3.png",
+        "uri": "10.png",
         "type": "image/png"
       }
     ],

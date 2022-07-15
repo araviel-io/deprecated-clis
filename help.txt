@@ -1,0 +1,3 @@
+ts-node .\src\candy-machine-v2-cli.ts --help
+ts-node .\src\candy-machine-v2-cli.ts verify_assets ./assets
+ts-node .\src\candy-machine-v2-cli.ts upload -e devnet -k .\my-keypair.json -cp .\config.json -c example .\example-assets
