@@ -30,7 +30,7 @@ import {
   CreateMasterEditionV3,
   UpdateMetadataV2,
   SetAndVerifyCollectionCollection,
-} from '@j0nnyboi/mpl-token-metadata';
+} from '@leda-mint-io/lpl-token-metadata';
 import PromisePool from '@supercharge/promise-pool/dist';
 import * as cliProgress from 'cli-progress';
 import { sleep } from '../helpers/various';

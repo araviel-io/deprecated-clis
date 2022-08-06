@@ -2330,22 +2330,13 @@
     buffer-layout "^1.2.0"
     run-s "^0.0.0"
 
-"@j0nnyboi/mpl-core@0.0.1":
+"@j0nnyboi/mpl-core@^0.0.1":
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/@j0nnyboi/mpl-core/-/mpl-core-0.0.1.tgz#03362f18038b22b56dd265a4ed873c4b5ef5ce02"
   integrity sha512-Q5KYRaXs9kcl7o3AglkXoLX4HjN69zMg9Eeu0VrH57tb10d7jzr6lKqh/6M47/4P2Nzy0l+aaqAi0rGsnW9GBQ==
   dependencies:
     "@safecoin/web3.js" "^1.29.3"
     bs58 "^4.0.1"
-
-"@j0nnyboi/mpl-token-metadata@^0.0.1":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@j0nnyboi/mpl-token-metadata/-/mpl-token-metadata-0.0.1.tgz#29b8dc5b15a42c1dd097c33c7ee096b906194e73"
-  integrity sha512-52c7jY8DgJrzhDDuEP6rYfWn2SmcPHC5W7q+e7lzITMX3ekKYz5WwvjBun2OpjLO2lXoxweBhreYbsYFJ9NtLw==
-  dependencies:
-    "@j0nnyboi/mpl-core" "0.0.1"
-    "@safecoin/safe-token" "^0.1.7-b"
-    "@safecoin/web3.js" "^1.29.3"
 
 "@jest/console@^27.5.1":
   version "27.5.1"
@@ -2533,6 +2524,15 @@
   dependencies:
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
+
+"@leda-mint-io/lpl-token-metadata@^1.2.52":
+  version "1.2.52"
+  resolved "https://registry.yarnpkg.com/@leda-mint-io/lpl-token-metadata/-/lpl-token-metadata-1.2.52.tgz#f79c06a3f3e23ac980a0ca92c2d24bfd0c9ba28f"
+  integrity sha512-MV/1P3yJ/xUpHdAeaPCPFx/EPIyL4ggC+ekNZnZD7tjPaf+xZoBPaS7RP0GxSjxmUK7+CsvJnO3Ripq2kdjGBA==
+  dependencies:
+    "@j0nnyboi/mpl-core" "^0.0.1"
+    "@safecoin/safe-token" "^0.1.7-b"
+    "@safecoin/web3.js" "^1.29.4"
 
 "@multiformats/murmur3@^1.0.3":
   version "1.1.1"

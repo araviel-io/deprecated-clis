@@ -19,7 +19,7 @@ import {
   CreateMetadataV2,
   Creator,
   DataV2,
-} from '@j0nnyboi/mpl-token-metadata';
+} from '@leda-mint-io/lpl-token-metadata';
 import log from 'loglevel';
 import { Program } from '@j0nnyboi/anchor';
 import { parseCollectionMintPubkey } from '../helpers/various';

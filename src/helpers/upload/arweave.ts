@@ -10,7 +10,7 @@ import { ARWEAVE_PAYMENT_WALLET } from '../constants';
 import { sendTransactionWithRetryWithKeypair } from '../transactions';
 
 const ARWEAVE_UPLOAD_ENDPOINT =
-  'http://safestore.testnet.darkartlabs.tech:1984/';
+  'https://bridge.ledamint.io/';
 
 async function fetchAssetCostToStore(fileSizes: number[]) {
   const result = await calculate(fileSizes);
@@ -111,7 +111,7 @@ export async function arweaveUpload(
     m => m.filename === `${index}${imageExt}`,
   );
   if (metadataFile?.transactionId) {
-    const link = `http://safestore.testnet.darkartlabs.tech:1984/${metadataFile.transactionId}`;
+    const link = `https://arweave.net/${metadataFile.transactionId}`;
     const imageLink = `https://arweave.net/${
       imageFile.transactionId
     }?ext=${imageExt.replace('.', '')}`;

@@ -18,7 +18,7 @@ import {
   UseMethod,
   Metadata,
   MetadataKey,
-} from '@j0nnyboi/mpl-token-metadata';
+} from '@leda-mint-io/lpl-token-metadata';
 
 export async function getCandyMachineV2Config(
   walletKeyPair: web3.Keypair,
