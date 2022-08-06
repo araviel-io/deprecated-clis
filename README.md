@@ -1,5 +1,18 @@
 # Metaplex Deprecated JS Clis
 
+Ara notes : -----------------------------------
+checking if everything is allright:
+
+ts-node src/candy-machine-v2-cli.ts --version
+
+Verify assets:
+
+ts-node .\src\candy-machine-v2-cli.ts verify_assets ./example-assets
+
+Mass on-chain upload (-k : keypair):
+ts-node .\src\candy-machine-v2-cli.ts upload -e devnet -k .\my-keypair.json -cp ex-cmachine-config.json -c example ./example-assets
+-----------------------------------------------
+
 🚨 **Deprecated Repo** 🚨
 
 Please note that this GitHub repository is no longer being maintained. To use the Metaplex Candy Machine or to integrate Metaplex's programs with your JavaScript applications **please use the following**:

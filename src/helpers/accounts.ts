@@ -571,10 +571,12 @@ export async function loadCandyProgramV2(
   const provider = new anchor.Provider(solConnection, walletWrapper, {
     preflightCommitment: 'recent',
   });
+  console.log("provider  : ", provider)
   const idl = await anchor.Program.fetchIdl(
     CANDY_MACHINE_PROGRAM_V2_ID,
     provider,
   );
+  console.log("IDL  : ", idl)
   const program = new anchor.Program(
     idl,
     CANDY_MACHINE_PROGRAM_V2_ID,

@@ -139,7 +139,7 @@ programCommand('upload')
 
     const walletKeyPair = loadWalletKey(keypair);
     const anchorProgram = await loadCandyProgramV2(walletKeyPair, env, rpcUrl);
-
+    console.log("walletKeyPair : ", walletKeyPair, "env ", env, "rpcUrl ", rpcUrl)
     const {
       storage,
       nftStorageKey,
